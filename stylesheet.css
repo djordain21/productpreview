@@ -1,0 +1,125 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background:hsl(30, 38%, 92%) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.card{
+    background: white;
+    height: 450px;
+    width: 600px;
+    border-radius: 25px;
+    display: flex;
+}
+
+img{
+    border-radius: 25px 0px 0px 25px;
+}
+
+.container{
+    padding: 20px;
+}
+
+.perfume{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    color: #6C7289;
+    letter-spacing: 5px;
+}
+
+.name {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+}
+
+.description{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #6C7289;
+}
+
+.price{
+font-family: 'Fraunces';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+color: #3D8168;
+}
+
+.discount{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+text-decoration-line: line-through;
+color: #6C7289;
+}
+
+button{
+border-radius: 8px;
+border: none;
+padding: 0;
+background: #3D8168;
+color: white;
+width: 236px;
+height: 48px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+margin-top: 10px;
+}
+
+.mobile{
+    display: none;
+}
+
+button:hover{
+    background: #3d8150;
+}
+
+@media screen and (max-width: 450px) {
+    .card{
+        background: white;
+        /* max-height: 240px; */
+        max-width: 345px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img{
+       display: none;
+    }
+
+    .mobile{
+        display: flex;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    .container{
+        max-height: 360px;
+        background: white;
+        justify-content: center;
+        border-radius: 25px;
+    }
+    
+    button{
+        width: 295px;
+    }
+}
